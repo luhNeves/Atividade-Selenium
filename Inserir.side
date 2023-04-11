@@ -1,0 +1,132 @@
+{
+  "id": "6eb37012-7e4b-4e3f-981a-7f61a38c645d",
+  "version": "2.0",
+  "name": "Inserir",
+  "url": "http://127.0.0.1:8080",
+  "tests": [{
+    "id": "f0d55c1c-d218-48d8-b2b9-f69d7c682723",
+    "name": "Inserir",
+    "commands": [{
+      "id": "ccb245bb-2a1d-4338-8e91-c0b7b3fe61dc",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:8080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b3dccd4-0a2f-4eb4-a52f-7724cd027958",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d33a875-9f73-4c97-8b0e-c5d5aa35ac82",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastro",
+      "targets": [
+        ["linkText=Cadastro", "linkText"],
+        ["css=span:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/cadastrar')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastro')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "22859e65-2891-4992-bed6-240d0d422169",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66e79094-cde4-48c3-b3b1-38220aa62238",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Rolfi"
+    }, {
+      "id": "9b293c59-7eb8-467b-904b-3e20bb1d116e",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//input[@id='endereco']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02fc536a-4a38-446c-8fdf-4a7c7d04e23e",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//input[@id='endereco']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Rua Um"
+    }, {
+      "id": "dccbc758-e079-4c2b-90e3-6104b60f9852",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "156cb143-ed23-4c13-8baf-ab38b6d6260a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e1790cd-12fd-4fb9-81cc-15af28e9a647",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Cadastro Efetuado com sucesso",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "4cd17cb3-31fa-41f4-8a76-400efebf8f6a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f0d55c1c-d218-48d8-b2b9-f69d7c682723"]
+  }],
+  "urls": ["http://127.0.0.1:8080/"],
+  "plugins": []
+}

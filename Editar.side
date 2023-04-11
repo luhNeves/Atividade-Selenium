@@ -1,0 +1,89 @@
+{
+  "id": "44130c83-556a-4160-bf0e-63b6f3e13411",
+  "version": "2.0",
+  "name": "Editar",
+  "url": "http://127.0.0.1:8080",
+  "tests": [{
+    "id": "e3adabf2-3ad9-4d17-ad1e-384d7c3cd868",
+    "name": "Editar",
+    "commands": [{
+      "id": "2a736c73-cbbb-4ce7-9be6-ed4303760f98",
+      "comment": "",
+      "command": "open",
+      "target": "/listar",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2234aa0-3154-49fb-9725-835925f4f196",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "976x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "63cc48f9-4d90-44f1-a35d-c4614c99d9d2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=tr:nth-child(3) .mat-primary > .mat-mdc-button-touch-target",
+      "targets": [
+        ["css=tr:nth-child(3) .mat-primary > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//tr[3]/td[3]/a/span[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "503cd019-86a3-4cda-9377-db7317ba0a99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cdk-focused > .mat-mdc-button-touch-target",
+      "targets": [
+        ["css=.cdk-focused > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//tr[3]/td[3]/a/span[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35c5c27c-e1d8-4462-a555-a86294e9f097",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57e2ba23-e199-4a41-ab20-75c5ddea7dc7",
+      "comment": "",
+      "command": "type",
+      "target": "name=nome",
+      "targets": [
+        ["name=nome", "name"],
+        ["css=div > .ng-dirty", "css:finder"],
+        ["xpath=//input[@name='nome']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "teste"
+    }, {
+      "id": "168a4b58-406f-4ab0-9a0f-b7a89b0b9274",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Atualizar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5305c0e5-ab8e-4ef3-9506-5fa4782e6fe0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e3adabf2-3ad9-4d17-ad1e-384d7c3cd868"]
+  }],
+  "urls": ["http://127.0.0.1:8080/"],
+  "plugins": []
+}
